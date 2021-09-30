@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>과제2</title>
+    <style>
+        @font-face {
+            font-family: 'SDMiSaeng'; /*글꼴*/
+            src: local('SDMiSaeng'),
+            url('../styles/SDMiSaeng.ttf') format('truetype');
+        }
+
+        .sdms-font {
+            font-family: 'SDMiSaeng', sans-serif; /*웹 폰트 지정*/
+            font-size: 20px;
+        }
+
+        table, td, th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 9px;
+        }
+
+        th {
+            background: #86C4FA;
+        }
+
+        td {
+            background: #fdfdfd;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .wrapper > div {
+            margin-left: 30px;
+        }
+
+        .site-footer {
+            margin-top: 50px;
+            background-color: #26272b;
+            padding: 25px 0 20px 10px;
+            font-size: 15px;
+            line-height: 24px;
+            color: #737373;
+        }
+
+        .site-footer hr {
+            border-top-color: #bbb;
+            opacity: 0.5
+        }
+
+        .site-footer h6 {
+            margin-top: 10px;
+            margin-bottom: 0;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px
+        }
+
+        .site-footer a {
+            color: #737373;
+        }
+
+        .site-footer a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            padding-left: 0;
+            list-style: none
+        }
+
+        .footer-links li {
+            display: block
+        }
+
+        .footer-links a {
+            color: #737373
+        }
+
+        .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+        .footer-links.inline li {
+            display: inline-block
+        }
+
+        .site-footer .social-icons a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 6px;
+            margin-right: 0;
+            border-radius: 100%;
+            background-color: #33353d
+        }
+
+        .made-text {
+            margin: 0
+        }
+    </style>
+</head>
+<body style="background: #F5F5F5">
+<center>
+    <div class="sdms-font" style="width: 80%; text-align: left">
+        <h1>과제1</h1>
+        <hr>
+        <p style="text-align: right">컴퓨터공학전공 19학번 김미경</p>
+        <h2>IntelliJ 단축키 15가지</h2>
+        <table>
+            <thead>
+            <tr>
+                <td></td>
+                <th style="width: 180px"><img src="../images/font.png" width="20px" align="top"> 단축키</th>
+                <th><img src="../images/left-align.png" width="15px"> 기능</th>
+                <th><img src="../images/left-align.png" width="15px"> 비고</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>01</th>
+                <td>Alt + Enter</td>
+                <td>코드에서 발견된 오류 위에 커서를 놓고, Alt+Enter을 누르면 문제에 대한 수정 제안 목록이 표시된다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>02</th>
+                <td>F2</td>
+                <td>수정이 필요한 곳으로 이동한다.</td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <th>03</th>
+                <td>MacOS: Cmd + 1<br>
+                    Win/Linux: Alt + 1
+                </td>
+                <td>프로젝트 창을 연다</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>04</th>
+                <td>Esc</td>
+                <td>모든 팝업창을 닫는다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>05</th>
+                <td>MacOS: Cmd + E<br>
+                    Win/Linux: Ctrl + E
+                </td>
+                <td>가장 최근 열었던 파일을 확인한다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>06</th>
+                <td>MacOS: Cmd + B<br>
+                    Win/Linux: Ctrl + B
+                </td>
+                <td>심볼이 구현된 클래스 파일로 이동한다.</td>
+                <td>Alt를 함께 누르면, 모든 파일에서 선언된 위치를 탐색한다.</td>
+            </tr>
+            <tr>
+                <th>07</th>
+                <td>Alt + F7</td>
+                <td>모든 사용 위치가 표시된다.</td>
+                <td>선언을 검색하는 것과 다르다</td>
+            </tr>
+            <tr>
+                <th>08</th>
+                <td>Crtl 두번 클릭</td>
+                <td>어느 위치에서든 Run Anything 창이 열린다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>09</th>
+                <td>MacOS: Alt+↑ / Alt+↓<br>
+                    Win/Linux: Ctrl+W / <span style="margin-left: 72px">Ctrl+Shift+W</span></td>
+                <td>커서 주변의 코드 섹션(선택된 영역)을 확장하거나 축소한다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>MacOS: Cmd + /<br>
+                    Win/Linux: Ctrl + /
+                </td>
+                <td>간편하게 주석을 추가한다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td>MacOS: Cmd+Shift+Enter<br>
+                    Win/Linux: Ctrl+Shift <span style="margin-left: 70px">+Enter</span></td>
+                <td>현재 구문을 완성한다.</td>
+                <td>중괄호를 자동으로 생성하고 다음 필요한 위치로 커서가 이동한다.</td>
+            </tr>
+            <tr>
+                <th>12</th>
+                <td>MacOS: Cmd + Alt + L<br>
+                    Win/Linux: Ctrl + Alt + L
+                </td>
+                <td>현재 파일의 서식을 프로젝트 표준에 맞춘다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>13</th>
+                <td>MacOS: Ctrl + T<br>
+                    Win/Linux: Ctrl+Shift+T
+                </td>
+                <td>모든 리펙토링을 표시한다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>14</th>
+                <td>MacOS: Cmd + Shift + A<br>
+                    Win/Linux: Ctrl+Shift+A
+                </td>
+                <td>액션 찾기 창이 열린다. 액션은 물론, 설정도 검색 가능해서, 이 창에서 설정을 바로 변경할 수 있다.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>15</th>
+                <td>Shift 두 번 클릭</td>
+                <td>전체 검색 창이 표시된다. 클래스, 파일, 심볼 및 액션의 검색 결과가 모두 표시된다. 명령어도 지원한다.</td>
+                <td>기본적으로 최근 파일이 표시되므로 Cmd + E 대신 이 창을 활용할 수 있다.</td>
+            </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+</center>
+<footer class="site-footer">
+    <div class="container">
+        <div class="wrapper">
+            <div>
+                <h6>About</h6>
+                <p style="margin-bottom: 30px">IntelliJ에서 유용하게 사용되는 15가지의 기능들을 html을 이용해 정리하였습니다.
+                    코드 에디터마다 사용되는 단축키들이 다르기 때문에 미리 단축키를 숙지해두면 코딩이 좀 더 간편해집니다.
+                    한 학기 동안 IntelliJ를 이용해 프로젝트를 개발할 예정이므로 개발을 하면서 사용되는 단축기들을 추가해 나갈 계획입니다.</p>
+            </div>
+
+            <div>
+                <h6>Reference</h6>
+                <ul class="footer-links" style="margin-bottom: 30px">
+                    <li><a href="https://www.youtube.com/watch?v=QYO5_riePOQ">Top 15 IntelliJ IDEA shortcuts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <div class="container">
+        <div>
+            <div>
+                <p class="made-text">Made by:
+                    <a href="https://github.com/rmfosem613">Mi-gyeong</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

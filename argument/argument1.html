@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>과제1</title>
+    <style>
+        @font-face {
+            font-family: 'SDMiSaeng'; /*글꼴*/
+            src: local('SDMiSaeng'),
+            url('../styles/SDMiSaeng.ttf') format('truetype');
+        }
+
+        .sdms-font {
+            font-family: 'SDMiSaeng', sans-serif; /*웹 폰트 지정*/
+            font-size: 20px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .wrapper>div {
+            margin-left: 30px;
+        }
+        .site-footer
+        {
+            margin-top: 50px;
+            background-color:#26272b;
+            padding:25px 0 20px 10px;
+            font-size:15px;
+            line-height:24px;
+            color:#737373;
+        }
+        .site-footer hr
+        {
+            border-top-color:#bbb;
+            opacity:0.5
+        }
+        .site-footer h6
+        {
+            margin-top: 10px;
+            margin-bottom: 0;
+            color:#fff;
+            font-size:16px;
+            text-transform:uppercase;
+            letter-spacing:2px
+        }
+        .site-footer a
+        {
+            color:#737373;
+        }
+        .site-footer a:hover
+        {
+            color:#3366cc;
+            text-decoration:none;
+        }
+        .footer-links
+        {
+            padding-left:0;
+            list-style:none
+        }
+        .footer-links li
+        {
+            display:block
+        }
+        .footer-links a
+        {
+            color:#737373
+        }
+        .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+        {
+            color:#3366cc;
+            text-decoration:none;
+        }
+        .footer-links.inline li
+        {
+            display:inline-block
+        }
+        .site-footer .social-icons a
+        {
+            width:40px;
+            height:40px;
+            line-height:40px;
+            margin-left:6px;
+            margin-right:0;
+            border-radius:100%;
+            background-color:#33353d
+        }
+        .made-text
+        {
+            margin:0
+        }
+    </style>
+</head>
+<body style="background: #F5F5F5">
+<center>
+    <div class="sdms-font" style="width: 80%; text-align: left">
+        <h1>과제1</h1>
+        <hr>
+        <p style="text-align: right">컴퓨터공학전공 19학번 김미경</p>
+        <h2>IntelliJ IDEA 학생 라이센스 받기</h2>
+        <div style="background: #FFFAAE; padding: 1px 7px 1px 7px">
+            <p>Ultimate 버전은 Community 버전보다 다양한 기능을 사용할 수 있습니다. Ultimate 버전을 사용하려면 유료 라이센스를 구입해야합니다.<br>
+                다만 아직까진 <span style="color: red"><b>학생 인증</b></span>을 통해 학생들에게 무료로 사용할 수 있는 라이센스를 제공하고 있습니다.
+            </p>
+        </div>
+        <p>
+            학생 라이센스를 받기 위해서는 제주대학교 학생 email을 먼저 생성해야 합니다.<br>
+            <a href="https://webmail.jejunu.ac.kr/login" style="text-decoration:none; color: red"><b>[ 제주대학교 웹메일
+                ]</b></a>에서 학번 인증을 통해 학생 email을 생성할 수 있습니다.
+        </p>
+        <p>
+            학생 email을 생성하였다면 <a href="www.jetbrains.com/community/education/#students" style="text-decoration:none"><img
+                src="../images/jetbrains.png" height="72px" align="middle"></a>에서 회원가입을 진행해야 합니다.
+        </p>
+        <p>
+            사이트에 접속하였다면 하단으로 내려가 <span
+                style="color: white; background: #167DFF; padding: 2px 7px 2px 7px;border-radius: 15px;"><b>Apply now</b></span>를
+            클릭합니다.
+        </p>
+        <p>
+            회원가입을 위한 정보 입력 및 신청을 진행합니다. Email address에 학교 이메일 계정을 입력하면 됩니다.<br>
+        <div style="background: #FFFAAE; padding: 5px 15px 5px 15px">💡 <i><span style="color: red">만약 학교 이메일 인증을 받을 수 없는 경우,</span><br>이메일을
+            새로 생성하거나 깃허브에 학생 인증이 진행되었다면 깃허브 연동을 통해 인증을 진행할 수 있습니다.</i></div>
+        </p>
+        <p>
+            회원가입을 완료하였다면 학교 이메일을 확인합니다. JetBrains 최종 인증이 완료 되어야 합니다.
+        </p>
+
+        <h2>IntelliJ 설치하기</h2>
+        <p>
+            <a href="https://www.jetbrains.com/idea/download/#section=windows"
+               style="text-decoration:none; color: blue"><b>[ Intellij 다운로드 사이트 ]</b></a>에 접속해 Untimate 버전을 다운로드 하여
+            설치합니다.<br>
+            설치가 완료되었다면 IntelliJ를 실행합니다. 최초 인증 계정 정보만 입력하면 인증이 완료됩니다.
+        </p>
+    </div>
+</center>
+<footer class="site-footer">
+    <div class="container">
+        <div class="wrapper">
+            <div>
+                <h6>About</h6>
+                <p style="margin-bottom: 30px">학생 인증을 통해 IntelliJ Ultimate 버전을 무료로 사용하는 방법을 정리하였습니다.
+                    우선 제주대학교 이메일을 새로 가입해야 합니다. 기존에 이메일을 가입했던 경우 특정 사이트에 대한 차단이 풀려있지 않은 경우가 있어 메일 인증을 제대로 진행하지 못하는 일이 발생할 수 있습니다.
+                    차선책으로 깃허브를 이용해 우회하여 인증하는 방법도 존재합니다. 한학기동안 IntelliJ를 이용해 다양한 프로젝트를 진행할 예정입니다.
+                </p>
+            </div>
+
+            <div>
+                <h6>Reference</h6>
+                <ul class="footer-links" style="margin-bottom: 30px">
+                    <li><a href="https://goddaehee.tistory.com/215">Intellij 학생 인증, 무료 설치 방법</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div>
+            <p class="made-text">Made by:
+                <a href="https://github.com/rmfosem613">Mi-gyeong</a>.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
