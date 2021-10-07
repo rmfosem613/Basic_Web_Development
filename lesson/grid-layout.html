@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+    header {
+        grid-column: span 2;
+        background-color: #00c73c;
+    }
+    section {
+        background-color: aqua;
+    }
+    aside {
+        background-color: brown;
+    }
+    /*main {*/
+    /*    grid-column: span 2;*/
+    /*    display: ;*/
+    /*}*/
+    footer {
+        grid-column: span 2;
+    }
+    nav ul {
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <header>
+    <h1>logo</h1>
+    <nav>
+      <ul>
+        <li><a href="license.html">license.html</a></li>
+        <li><a href="license.html">license.html</a></li>
+        <li><a href="license.html">license.html</a></li>
+      </ul>
+    </nav>
+  </header>
+<!--  <main>-->
+  <section>
+    section
+  </section>
+  <aside>
+    aside
+  </aside>
+<!--  </main>-->
+  <footer>
+    footer
+  </footer>
+
+</div>
+</body>
+</html>

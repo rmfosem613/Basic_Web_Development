@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Display</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: #00c73c;
+        height: 100px;
+    }
+    main {
+        border: 1px solid brown;
+        background-color: bisque;
+        /*height: 500px;*/
+    }
+    .clearfix:after {
+        content: "";
+        display: table;
+        table-layout: fixed;
+        clear: both;
+    }
+    section, aside {
+        float: left;
+        height: 100%;
+    }
+    section {
+        border: 1px solid #00c73c;
+    }
+    aside {
+        border: 1px solid blueviolet;
+    }
+    footer {
+        background-color: aqua;
+        height: 100px;
+    }
+    nav ul {
+
+    }
+    nav ul li {
+        padding: 10px;
+        list-style: none;
+        float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    header
+    <nav>
+      <ul class="clearfix">
+        <li><a href="license.html">license</a></li>
+        <li><a href="shortcut.html">shortcut</a></li>
+        <li><a href="else.html">else</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="clearfix">
+    <section>section</section>
+    <aside>aside</aside>
+  </main>
+  <footer>footer</footer>
+</div>
+</body>
+</html>

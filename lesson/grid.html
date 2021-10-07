@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 100px 100px auto;
+        grid-auto-flow: dense;
+        grid-gap: 5px;
+    }
+    li {
+        border: 1px solid green;
+    }
+    li.vertical {
+        grid-row: span 2;
+    }
+    li.horizontal {
+        grid-column: span 3;
+    }
+    li>img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li><img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202106/22/bazaarkorea/20210622094645492zfvj.jpg"
+       alt="세계 최초의 패션 매거진이 생일을 축하하는 방법"></li>
+  <li>
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202106/07/CulturalHeritageAdministration/20210607051939598hljz.jpeg"
+       alt="전통재료의 미래가치를 새롭게 발견하다"></li>
+  <li class="vertical">
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202106/25/gallery/20210625110823898rxuc.jpg"
+       alt="6·25전사자 유해발굴사업 온라인 특별전시전">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/khan/20210930125935834cfxm.jpg"
+       alt="생후 100일 앞두고 공개된 아기호랑이 5남매 [포토 뉴스]">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/ilgansports/20210930150339061aqeq.jpg"
+       alt="[포토] 키 '내가 거기로 가겠소'">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/SpoChosun/20210930151415137tbai.jpg"
+       alt="&quot;최고의 선물, 감동♡&quot; 전혜빈, '♥치과의사 남편'의 특급 생일선물에 폭풍감동">
+
+
+  </li>
+  <li class="horizontal">
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/10asia/20210930162808407xnuy.jpg"
+       alt="양준일, 출구없는 무한매력남..장난꾸러기 같은 포즈[TEN★]">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/kppa/20210930160019705ninw.jpg"
+       alt="[포토친구] 활짝 웃고 있는 백일홍">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/poctan/20210930151119163ecre.jpg"
+       alt="홍현희, ♥제이쓴 옷 입었는데 설렘 제로..노이로제 언니 왔네?">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/29/tvdaily/20210929124124762pqaj.jpg"
+       alt="[TD포토] 블랙핑크 제니 '걷기만해도 화보'">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/29/poctan/20210929194356486pduv.jpg"
+       alt="소녀시대, 이러니 해체 없이 14년간 장수하지">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/khan/20210930125935834cfxm.jpg"
+       alt="생후 100일 앞두고 공개된 아기호랑이 5남매 [포토 뉴스]">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/poctan/20210930153100023nhie.jpg"
+       alt="천이슬 &quot;연애? 정해둔 기준 없다 항상 열려있다&quot;[화보]">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/THEFACT/20210930152824399cpft.jpg"
+       alt="박진, 윤석열 지지 선언.. &quot;문 정권 심판할 뚝심있는 후보&quot; [TF사진관]">
+
+
+  </li>
+  <li>
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/sportskhan/20210930164121005ttcd.jpg"
+       alt="김희재, 배우 활동 인증 &quot;용렬이 시동겁니다&quot;">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/newsis/20210930015531640nbul.jpg"
+       alt="英, 유조차 운전기사 부족에 군 운전병 투입">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/15/seoul/20210915050622855uomd.jpg"
+       alt="北 수해 복구 1년 뒤..">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/inews24/20210930155616830imri.jpg"
+       alt="[포토] 설악산 '첫 단풍' 물들었다">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/NEWS1/20210930091736668aoih.jpg"
+       alt="북한 '따뜻한 요람' 평양육아원 선전">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/28/ned/20210928111623686bdcl.jpg"
+       alt="광양항 컨테이너부두서 트레일러에 치여 50대 숨져">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/NEWS1/20210930083748371mmwd.jpg"
+       alt="기시다 신임 자민당 총재 선출 축하 연설하는 스가">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/NEWS1/20210930152726627cimm.jpg"
+       alt="비 그치고 맑은 가을하늘">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/newsis/20210930162354375uvui.jpg"
+       alt="윤여정, 미 아카데미 영화 박물관 오픈 행사 참석">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/donga/20210930161052806rwzq.jpg"
+       alt="[퇴근길 한 컷]깊어가는 가을,코스모스 물결">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/newsis/20210930162109491mkya.jpg"
+       alt="[뉴시스Pic] 조계사에 나타난 초록 공룡.. 10월에 만나요">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/newsen/20210930142249684akbh.jpg"
+       alt="장하나-리디아 고-박현경, '하나금융그룹 챔피언십' 을 빛내요 [포토엔HD]">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/27/NEWS1/20210927215000399hgir.jpg"
+       alt="김단비 '우리가 이겼다'">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/29/newsis/20210929124018214cndu.jpg"
+       alt="승리한 동료 환영하는 김광현">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/26/poctan/20210926170306322azxf.jpg"
+       alt="임창정-유해란-김지영2,'초대 우승 기념샷' [사진]">
+
+
+  </li>
+  <li>
+
+
+    <img
+      src=" //img2.daumcdn.net/thumb/S60x60/?fname=https://t1.daumcdn.net/news/202109/30/mksports/20210930161205760ynug.jpg"
+       alt="양석환 '홍창기 악력에 까치발' [MK포토]">
+
+
+  </li>
+</ul>
+</body>
+</html>
