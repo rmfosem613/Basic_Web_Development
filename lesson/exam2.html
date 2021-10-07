@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .dialog {
+            width: 300px;
+            height: 50px;
+            background-color: orange;
+            padding: 13px 0 0 20px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            z-index: 9999;
+        }
+        .dialog .close {
+            position: absolute;
+            right: 20px;
+        }
+        .dialog2 {
+            width: 1000px;
+            height: 500px;
+            position: absolute;
+            background-color: #00c73c;
+        }
+    </style>
+</head>
+<body>
+<div class="dialog">
+    Hello Dialog
+    <span class="close">&times;</span>
+</div>
+<div class="dialog2">
+
+</div>
+꼭짓점 반경은 요소의 테두리 존재 여부와는 별개로 전체 background에 적용됩니다. 원형 꼭짓점으로 인해 배경이 잘리는 지점은 background-clip 속성이 지정합니다.
+
+border-collapse의 값이 collapse인 표 요소는 border-radius 속성의 영향을 받지 않습니다.
+
+참고: 다른 단축 속성과 마찬가지로, 각각의 하위 속성이 부모를 상속하도록 할 수는 없습니다. 즉, border-radius: 0 0 inherit inherit처럼 일부만 재정의할 수 없습니다. 대신, 원래의 본디속성을 하나씩 사용하세요.
+구성 속성
+border-radius는 다음 CSS 속성의 단축 속성입니다.
+
+border-bottom-left-radius (en-US)
+border-bottom-right-radius (en-US)
+border-top-left-radius (en-US)
+border-top-right-radius (en-US)
+구문
+/* The syntax of the first radius allows one to four values */
+/* Radius is set for all 4 sides */
+border-radius: 10px;
+
+</body>
+</html>
