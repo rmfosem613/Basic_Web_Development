@@ -1,0 +1,94 @@
+/* font */
+@font-face {
+    font-family: 'SDMiSaeng'; /*글꼴*/
+    src: local('SDMiSaeng'),
+    url('../styles/SDMiSaeng.ttf') format('truetype');
+}
+
+.sdms-font {
+    font-family: 'SDMiSaeng', sans-serif; /*웹 폰트 지정*/
+    font-size: 20px;
+}
+/* side */
+.side-list{
+    padding-left:20px;
+    list-style:none;
+    font-weight: bold;
+}
+.side-list a
+{
+    color:black;
+    text-decoration: none;
+}
+.side-list a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+
+
+/* section */
+.contents {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+#iframe_id{
+    width: 80%;
+    background-color: white;
+}
+
+section>ol>li {
+    font-size:20px;
+    margin-top: 25px;
+}
+
+/* footer */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper>div {
+    margin-left: 30px;
+}
+.site-footer
+{
+    /* margin-top: 50px; */
+    background-color:#26272b;
+    padding:25px 0 20px 10px;
+    font-size:18px;
+    line-height:24px;
+    color:#737373;
+}
+.site-footer hr
+{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.site-footer h6
+{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color:#fff;
+    font-size:20px;
+    text-transform:uppercase;
+    letter-spacing:2px
+}
+.site-footer a
+{
+    color:#737373;
+}
+.site-footer a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.made-text
+{
+    margin:0
+}
