@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 /* font */
 @font-face {
@@ -43,7 +46,7 @@ header>h1{
 /* section */
 .contents {
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 0fr 1fr;
 }
 #iframe_id{
     width: 80%;
@@ -58,6 +61,7 @@ section>ol>li {
 
 .project-ul{
     list-style:none;
+    padding-left: 35px;
 }
 
 .project-ul>li{
@@ -81,17 +85,23 @@ section>ol>li {
 }
 
 .exp-list>h4{
-    margin-left: 25px;
+    padding-left: 15px;
+    margin-top: 10px;
 }
 
 #exp-ul{
     list-style:none;
+    padding-left: 25px;
+}
+
+.edu-ol {
+    padding-left: 35px;
 }
 
 /* footer */
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .wrapper>div {
