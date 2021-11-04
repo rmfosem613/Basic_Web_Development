@@ -1,0 +1,29 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    background-color: greenyellow;
+}
+
+ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+li {
+    float: left;
+    width: 33.3%;
+    height: 250px;
+    padding: 5px;
+}
+
+@media all and (max-width:800px) {
+    li {
+        width: 50%;
+    }
+}
