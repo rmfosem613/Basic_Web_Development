@@ -1,0 +1,55 @@
+@charset "uft-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.flex-container {
+    height: 100vh;
+    display: flex; /*inline-flex로 할 경우 item 이상의 범위에 대한 정렬 설정이 불가능함*/
+
+    justify-content: space-evenly; /*flex-start*/
+    align-items: center;
+    align-content: center;
+    /*flex-direction: row;*/ /*column으로 할 경우 세로 정렬*/
+    /*flex-wrap: wrap;*/ /*복수 행으로 배치*/
+    flex-flow: row wrap; /*flex-direction과 flext-wrap을 한번에*/
+
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #60B99A;
+
+}
+.flex-item {
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background: #4584b1;
+    
+}
+
+.flex-item:nth-child(2){ /*html 코드를 수정하지 않고 css로 수정*/
+    order: 0; /*음수, 0, 양수*/
+    background-color: #3f3752;
+}
+
+.n5 {
+    order: 1
+}
+.n3 {
+    order: 2
+}
+.n9 {
+    order: -1
+}
+
+@media all and (min-width: 639px) {
+    .flex-item {
+        background-color: #2bf652;
+    }
+}
