@@ -1,0 +1,28 @@
+@charset "uft-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    background-color: #3f3752;
+}
+
+.content {
+    flex: 1;
+    background-color: #9fe2bf;
+}
+
+footer {
+    height: 100px;
+    background-color: #03bcf4;
+}

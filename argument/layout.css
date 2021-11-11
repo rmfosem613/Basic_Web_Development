@@ -6,11 +6,16 @@
     list-style: none;
 }
 
+.wrap {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
 .wrapper {
     width: 960px;
     display: flex;
-    flex-flow: row wrap; /*flex-direction과 flext-wrap을 한번에*/
-
+    flex-flow: row; /*flex-direction과 flext-wrap을 한번에*/
 }
 
 .header {
@@ -19,18 +24,17 @@
     background-color: #066cfa;
     border-bottom: 1px solid #000;
 }
-
-.aside {
-    width: 330px;
+.main {
+    width: 600px;
     height: 400px;
-    background-color: #00ff90;
+    background-color: #ffd800;
     padding: 15px;
 }
 
-.main {
-    width: 630px;
+.aside {
+    width: 300px;
     height: 400px;
-    background-color: #ffd800;
+    background-color: #00ff90;
     padding: 15px;
 }
 
@@ -38,4 +42,34 @@
     width: 960px;
     height: 120px;
     background-color: #c3590a;
+}
+
+@media all and (min-width:1025px) {
+    .aside{
+        flex: 1;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .main {
+        width: 50%;
+    }
+    .aside {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .wrapper{
+        flex-flow: column wrap;
+        height: 600px;
+    }
+    .main{
+        width: 100%;
+        height: 400px;
+    }
+    .aside{
+        width: 100%;
+        height: 200px;
+    }
 }
