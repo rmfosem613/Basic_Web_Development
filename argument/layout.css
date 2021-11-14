@@ -52,10 +52,10 @@
 
 @media all and (max-width: 1024px) {
     .main {
-        width: 50%;
+        flex-basis: 50%;
     }
     .aside {
-        width: 50%;
+        flex-basis: 50%;
     }
 }
 
