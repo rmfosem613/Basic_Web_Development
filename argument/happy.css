@@ -1,0 +1,23 @@
+:root {
+    --color1: #CD5C5C;
+    --color2: #F08080;
+    --color3: #FA8072;
+    --color4: #E9967A;
+    --color5: #FFA07A;
+    --rotate: 0.5turn;
+}
+
+/* 3D Transform */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

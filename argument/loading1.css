@@ -1,0 +1,75 @@
+@charset "uft-8";
+:root {
+    --color1: #CD5C5C;
+    --color2: #F08080;
+    --color3: #FA8072;
+    --color4: #E9967A;
+    --color5: #FFA07A;
+    --rotate: 0.5turn;
+}
+
+/* 3D Transform */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .loading{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid transparent;
+    border-top: 5px solid var(--color5);
+    border-radius: 50%;
+    animation: ani 1s linear infinite;
+}
+
+.wrapper .loading::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: var(--color2);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 5px var(--color3), 
+        0 0 25px var(--color3), 
+        0 0 35px var(--color3);
+}
+
+.wrapper p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: .2em;
+}
+
+@keyframes ani {
+    0% {
+        transform:  rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
