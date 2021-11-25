@@ -1,0 +1,33 @@
+@charset "uft-8";
+:root {
+    --color1: #e74d3c77;
+    --color2: #f4d03f86;
+    --color3: #27ae5f91;
+    --color4: #5dade296;
+    --color5: #e67d2285;
+    --color6: #9c59b673;
+}
+
+/* 3D Transform */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
