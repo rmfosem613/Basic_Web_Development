@@ -1,11 +1,11 @@
 @charset "uft-8";
 :root {
-    --color1: #e74d3c77;
-    --color2: #f4d03f86;
-    --color3: #27ae5f91;
-    --color4: #5dade296;
-    --color5: #e67d2285;
-    --color6: #9c59b673;
+    --color1: #e74d3c;
+    --color2: #f4d03f;
+    --color3: #27ae5f;
+    --color4: #5dade2;
+    --color5: #e67d22;
+    --color6: #9c59b6;
 }
 
 /* 3D Transform */
@@ -30,4 +30,70 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper path {
+    stroke-dasharray: 54;
+    stroke-dashoffset: 54;
+    transition: 2s;
+    fill: var(--color1);
+    stroke: var(--color2);
+    stroke-width: 1;
+}
+
+.wrapper svg:hover path {
+    stroke-dashoffset: 0;
+}
+
+.wrapper path.like {
+    animation: like 1s linear forwards,
+    heart-beat 0.5s ease-in-out 2s 2 forwards;
+    transform-origin: center;
+}
+
+@keyframes heart-beat {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes like {
+    0%{
+
+    }
+    50%{
+
+    }
+    
+    75% {
+        /* stroke-dashoffset: 0; */
+        /* stroke: var(--color1); */
+        fill: var(--color1);
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke: var(--color3);
+        fill: var(--color3);
+    }
+}
+
+.wrapper path.unlike {
+    animation: unlike 1s linear forwards;
+}
+
+@keyframes unlike {
+    /* 시작점 필요 */
+    from {
+        stroke-dashoffset: 0;
+        stroke: var(--color5);
+        fill: var(--color3);
+    }
+    to {
+        stroke-dashoffset: 54;
+        stroke: violet;
+        fill: var(--color1);
+    }
 }

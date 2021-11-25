@@ -15,7 +15,8 @@
     </div>
 
     <script>
-        function toggle(e) {
+        function toggle(e){
+            const target = e.target;
             if(e.target.classList.contains('like')) {
                 e.target.classList.add('unlike');
                 e.target.classList.remove('like');
@@ -24,7 +25,7 @@
                 e.target.classList.add('like');
             }
         }
+        document.querySelectorAll('svg')[0].addEventListener('click', toggle);
     </script>
-    
 </body>
 </html>
