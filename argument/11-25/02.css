@@ -1,0 +1,38 @@
+@charset "uft-8";
+:root {
+    --color1: #ff1900;
+    --color2: #f4d03f;
+    --color3: #27ae5f;
+    --color4: #5dade2;
+    --color5: #e67d22;
+    --color6: #9c59b6;
+}
+
+/* 3D Transform */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px solid var(--color5);
+    transition: 1s ease-in;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 0 #999,
+    10px 10px 0 #777,
+    15px 15px 0 #444,
+    20px 20px 0 #111;
+}
